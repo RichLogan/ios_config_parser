@@ -12,7 +12,7 @@ if not version:
 
 print 'VER:', version
 
-with open('README') as f:
+with open('README.md') as f:
     readme = f.read()
 
 packages = ['ios_config_parser']
