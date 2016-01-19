@@ -25,7 +25,7 @@ class IOSDevice(object):
                     continue
                 index += 1
                 while (lines[index].startswith(" ")):
-                    if lines[index].startswith("description"):
+                    if lines[index].startswith(" description"):
                         description = lines[index].split("description ", 1)[1]
                         interface["description"] = description.rstrip()
                     if lines[index].startswith(" shutdown"):
