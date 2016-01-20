@@ -8,7 +8,7 @@
 - Below is an example of auditing a remote router's interface descriptions:
 
 ```python
-import io
+import json
 from fabric.api import *
 from fabric.network import disconnect_all
 from fabric.context_managers import hide
@@ -23,7 +23,7 @@ env.password = <password>
 with hide('running', 'stdout', 'stderr', 'status'):
     config_file = run("sh run")
     device = IOSDevice(config_file)
-    print device.audit_interfaces(simple=False)
+    print json.dumps(device.audit_interfaces(simple=False))
     disconnect_all()
 ```
 
@@ -36,5 +36,4 @@ And the output:
         "Loopback0"
     ]
 }
-
 ```
