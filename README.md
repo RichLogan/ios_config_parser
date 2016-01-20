@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/RichLogan/ios_config_parser.png?label=ready&title=Ready)](https://waffle.io/RichLogan/ios_config_parser)
 
 
 # IOS Config Parser ![](https://api.travis-ci.org/RichLogan/ios_config_parser.svg?branch=master)
